@@ -16,7 +16,7 @@ public class User {
     private short age;
     private String userName;
     private String email;
-
+    public User() {}
     public User(Long id, short age, String userName, String email) {
         this.id = id;
         this.age = age;

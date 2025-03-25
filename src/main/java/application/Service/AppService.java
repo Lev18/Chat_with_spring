@@ -5,5 +5,5 @@ import application.Component.User;
 
 public interface AppService {
     public List<User> getUsers();
-    public User addUser(User user);
+    public User insertUser(User user);
 }

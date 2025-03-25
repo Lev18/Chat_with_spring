@@ -20,11 +20,12 @@ public class AppServiceImpl implements AppService {
 
     @Override
     public List<User> getUsers() {
-        return null;
+        return userRepo.findAll();
     }
 
     @Override
-    public User addUser(User user) {
+    public User insertUser(User user) {
+        userRepo.save(user);
         return user;
     }
 }

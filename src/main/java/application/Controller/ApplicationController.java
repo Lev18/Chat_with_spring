@@ -34,7 +34,7 @@ public class ApplicationController {
     @PostMapping(path = "add_user")
     @ResponseStatus(code = HttpStatus.CREATED)
     public User addUser(@RequestBody User user) {
-        users.add(user);
+        appService.insertUser(user);
         return user;
     }
 }
