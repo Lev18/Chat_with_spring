@@ -1,0 +1,43 @@
+HotReload.java:47: error: cannot find symbol
+                        Path changedFile = event.resolve((Path) event.context()); 
+                                                ^
+  symbol:   method resolve(Path)
+  location: variable event of type WatchEvent<?>
+1 error
+HotReload.java:47: error: cannot find symbol
+                        Path changedFile = event.resolve((Path) event.context()); 
+                                                ^
+  symbol:   method resolve(Path)
+  location: variable event of type WatchEvent<?>
+1 error
+HotReload.java:24: error: unreported exception IOException; must be caught or declared to be thrown
+        Files.walkFileTree(start, new SimpleFileVisitor<Path> (){
+                          ^
+1 error
+HotReload.java:42: error: cannot find symbol
+            registerAll(watchService, keyMap, path);
+                                              ^
+  symbol:   variable path
+  location: class HotReload
+1 error
+HotReload.java:69: error: ')' expected
+                            if (isTimeToComple(changedFile) {
+                                                           ^
+1 error
+HotReload.java:10: error: incompatible types: int cannot be converted to Long
+    public static final Long TIME_TO_COMPILE = 500;
+                                               ^
+HotReload.java:14: error: cannot find symbol
+        long currentTime = System.currentTimeMills();
+                                 ^
+  symbol:   method currentTimeMills()
+  location: class System
+2 errors
+HotReload.java:55: error: ';' expected
+        System.out.println("Comand line argument length" + args.length)
+                                                                       ^
+1 error
+HotReload.java:55: error: unreported exception IOException; must be caught or declared to be thrown
+            throw new IOException("Please provide path for scanning");
+            ^
+1 error
