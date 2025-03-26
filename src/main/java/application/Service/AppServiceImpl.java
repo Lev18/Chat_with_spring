@@ -28,4 +28,9 @@ public class AppServiceImpl implements AppService {
         userRepo.save(user);
         return user;
     }
+
+    @Override
+    public User getUser(Long id) {
+        return userRepo.findById(id.intValue()).orElse(null);
+    }
 }
