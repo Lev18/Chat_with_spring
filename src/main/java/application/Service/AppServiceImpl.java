@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import application.Component.User;
+import application.Model.User;
 import application.Repository.UserRepo;
 
 @Component("appServiceImpl")

@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.ArrayList;
 import java.util.List;
-import application.Component.User;
+import application.Model.User;
 import application.Service.AppService;
 
 @RestController

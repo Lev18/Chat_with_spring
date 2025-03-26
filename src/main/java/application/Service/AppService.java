@@ -1,7 +1,7 @@
 package application.Service;
 
 import java.util.List;
-import application.Component.User;
+import application.Model.User;
 
 public interface AppService {
     public List<User> getUsers();
