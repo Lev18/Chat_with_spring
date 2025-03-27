@@ -1,6 +1,7 @@
 package application.Controller;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
 
 import org.springframework.http.HttpStatus;
 
@@ -13,14 +14,17 @@ import application.Model.User;
 import application.Service.AppService;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api")
 public class ApplicationController {
     @Autowired
     @Qualifier("appServiceImpl")
-    AppService appService;
-
-    List<User> users = new ArrayList<>();
+    AppService appService;    
     
+    @GetMapping
+    public String front (){
+        return "Welcome";
+    }
+
     @GetMapping(path = "users")
     public List<User> getUsers() {
         return appService.getUsers();
